@@ -5,7 +5,17 @@
 (() => {
 
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
+    let date = new Date();
+    let hours = date.getHours();
+    let mins = date.getMinutes();
+    let time = hours + ":" + mins;
 
-    // your code here
+    if ((time < "17:30")) {
+        document.getElementById("target").innerHTML = "Hello !";
+    }
+
+    else {
+        document.getElementById("target").innerHTML = "Good evening !";
+    }
 
 })();

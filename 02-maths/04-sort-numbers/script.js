@@ -6,11 +6,10 @@
 
     document.getElementById("run").addEventListener("click", () => {
 
-        let numbers = [document.getElementById("numbers").value];
-        // let numbers = [4, 2, 5, 1, 3];
+        let values = document.getElementById("numbers").value;
+        const numbers = values.split(",");
         numbers.sort((a, b) => a - b);
-        alert(numbers);
-        // document.getElementById("numbers").value = numbers;
+        document.getElementById("numbers").value = numbers;
 
     });
 
