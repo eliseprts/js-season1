@@ -30,7 +30,7 @@
         },
         {
             firstname: "Jorrie",
-            lastname: "Canedo",
+            lastname: "Caned                        o",
             email: "jcanedo5@engadget.com",
         },
         {
@@ -80,6 +80,14 @@
         },
     ];
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function displayPeople() {
+        function displayJeanDupont(client, index) {
+            if ((client.firstname == "Jean") && (client.lastname == "Dupont")) {
+                console.log(client.email);
+                console.log(index);
+            }
+        }
+        people.forEach(displayJeanDupont);
+    })
 
 })();

@@ -10,5 +10,12 @@
         city: "Liège",
         status: "married",
     };
-    // your code here
+
+    document.getElementById("run").addEventListener("click", function displayKeysValues() {
+        // DISPLAY KEYS
+        console.log(Object.getOwnPropertyNames(person));
+        // DISPLAY VALUES
+        console.log(Object.values(person));
+    })
+
 })();

@@ -31,6 +31,11 @@
         },
     ];
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function displayPeople() {
+        function displayName(people) {
+            console.log(people.firstname);
+        }
+        people.forEach(displayName);
+    })
 
 })();

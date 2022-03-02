@@ -18,6 +18,10 @@
         "cherry",
     ];
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function displayFruits() {
+        for (let elem of fruits) {
+            console.log(elem);
+        }
+    })
 
 })();

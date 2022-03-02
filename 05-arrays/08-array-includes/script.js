@@ -17,6 +17,14 @@
         "cherry",
     ];
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function presence() {
+        console.log("Is there an apple in the array ? ");
+        function apple(element) {
+            if (element == "apple") {
+                console.log("Yes");
+            }
+        }
+        fruits.forEach(apple);
+    })
 
 })();

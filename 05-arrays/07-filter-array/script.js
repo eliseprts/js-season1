@@ -80,6 +80,15 @@
         },
     ];
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function displayPeople() {
+        let peopleAgedMin18 = []
+        function displayPeopleAgedMin18(client) {
+            if (client.age >= 18) {
+                peopleAgedMin18.push(client);
+            }
+        }
+        people.forEach(displayPeopleAgedMin18);
+        console.log(peopleAgedMin18);
+    })
 
 })();
