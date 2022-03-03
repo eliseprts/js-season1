@@ -3,6 +3,9 @@
 
 (() => {
 
-    // your code here
+    let targetElem = document.getElementById("target");
+
+    let table = document.createElement("table");
+
 
 })();

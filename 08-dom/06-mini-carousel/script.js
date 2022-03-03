@@ -3,7 +3,7 @@
 
 (() => {
 
-    let gallery= [
+    let gallery = [
         "../../_shared/img/bell.svg",
         "../../_shared/img/clock.svg",
         "../../_shared/img/compass.svg",
@@ -11,6 +11,11 @@
         "../../_shared/img/map.svg",
     ];
 
-    // your code here
+    let image = document.querySelector("img");
+
+    document.getElementById("next").addEventListener("click", function nextImage() {
+        let randomSrc = gallery[Math.floor(Math.random() * gallery.length)];
+        image.src = randomSrc;
+    })
 
 })();

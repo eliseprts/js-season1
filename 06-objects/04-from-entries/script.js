@@ -6,12 +6,16 @@
     const values = ["Skitty", "cat", 9, "female", "tabby"];
 
     document.getElementById("run").addEventListener("click", function fromEntries() {
+
+        const KeyValue = [keys[0], values[0]];
+
         const entries = new Map([
-            keys,
-            values
+            KeyValue,
         ]);
+
         const obj = Object.fromEntries(entries);
         console.log(obj);
+
     })
 
 })();

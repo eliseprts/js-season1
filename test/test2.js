@@ -1,6 +1,3 @@
-//06-objects/02-assign-properties/script.js - 6.2: assign properties
-
-
 (() => {
     const computers = [
         { id: "0001", available: false, user: "leny", os: "macOS" },
@@ -21,19 +18,23 @@
 
     document.getElementById("run").addEventListener("click", function assignProperties() {
 
-        // const updateComputers = [];
+        console.log({
+            ...computers,
+            ...defaultProps,
+            available: {
+                ...computers.available,
+                ...defaultProps.available,
+            },
+            user: {
+                ...computers.user,
+                ...defaultProps.user,
+            },
+            os: {
+                ...computers.os,
+                ...defaultProps.os,
+            },
+        })
 
-        // for (let object of computers) {
-        //     object = { ...defaultProps, ...object };
-        //     computers.push(object);
-        // }
-
-        // for (let object of computers) {
-        //     object = Object.assign(defaultProps, object);
-        //     updateComputers.push(object);
-        // }
-
-        // console.log(updateComputers);
-    })
+    }
 
 })();

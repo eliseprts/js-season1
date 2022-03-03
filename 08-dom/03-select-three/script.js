@@ -3,6 +3,12 @@
 
 (() => {
 
-    // your code here
+    function replace() {
+        var target = document.querySelectorAll(".target");
+        for (var i = 0; i < target.length; i++) {
+            target[i].innerHTML = "owned";
+        }
+    }
+    replace();
 
 })();
