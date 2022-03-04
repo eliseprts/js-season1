@@ -3,6 +3,9 @@
 
 (() => {
 
-    // your code here
+    document.getElementById("slider").addEventListener("input", function generatePhoneNumber() {
+        let val = document.querySelector("#slider").value;
+        document.querySelector("#target").innerHTML = val;
+    })
 
 })();

@@ -3,9 +3,21 @@
 
 (() => {
 
-    let targetElem = document.getElementById("target");
+    var targetElem = document.getElementById("target");
 
-    let table = document.createElement("table");
+    // TABLE
+    var table = document.createElement("table");
 
+    // ROWS AND CELLS
+    for (i = 0; i <= 9; i++) {
+        var row = document.createElement("tr");
+        var cell = document.createElement("td");
+        row.appendChild(cell);
+        // ADD CELLS TO TABLE
+        table.appendChild(row);
+    }
+
+    // ADD TABLE TO TARGET
+    targetElem.appendChild(table);
 
 })();
