@@ -2,5 +2,18 @@
 
 
 (() => {
-    // your code here
+
+    document.getElementById("run").addEventListener("click", () => {
+
+        const displayArticles = article => {
+            for (let elem of article) {
+                console.log(elem);
+            }
+        }
+
+        window.lib.getPosts()
+            .then(article => displayArticles(article))
+
+    });
+
 })();

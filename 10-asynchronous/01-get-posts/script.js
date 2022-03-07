@@ -2,5 +2,16 @@
 
 
 (() => {
-    // your code here
+
+    document.getElementById("run").addEventListener("click", () => {
+        window.lib.getPosts((error, articles) => {
+            if (error) {
+                console.log(error);
+            };
+            for (let elem of articles) {
+                console.log(elem);
+            };
+        });
+    });
+
 })();

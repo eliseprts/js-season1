@@ -2,5 +2,26 @@
 
 
 (() => {
-    // your code here
+
+    document.getElementById("run").addEventListener("click", () => {
+
+        const displayArticles = article => {
+            for (let elem of article) {
+                console.log(elem);
+            }
+        }
+
+        window.lib.getComments()
+            .then(nbrComments => {
+                // console.log(nbrComments);
+                for (let elem of article) {
+                    elem.comments = nbrComments;
+                }
+            })
+
+        window.lib.getPosts()
+            .then(article => displayArticles(article))
+
+    })
+
 })();

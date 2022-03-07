@@ -2,5 +2,20 @@
 
 
 (() => {
-    // your code here
+
+
+    document.getElementById("run").addEventListener("click", async () => {
+
+        const nbrComments = await window.lib.getComments();
+
+        const articles = await window.lib.getPosts();
+
+        for (let elem of articles) {
+            elem.comments = nbrComments;
+        }
+
+        console.log(articles);
+
+    })
+
 })();
