@@ -2,3 +2,7 @@
 
 - Solo work
 - Duration : 5 days
+
+### Learning objectives
+
+Learning Javascript
